@@ -11,11 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150109043936) do
+ActiveRecord::Schema.define(version: 20150109181223) do
 
   create_table "alunos", force: true do |t|
     t.string   "cpf"
     t.string   "email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "professors", force: true do |t|
+    t.string   "name"
+    t.string   "cpf"
+    t.date     "birthday"
+    t.string   "sex"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "cep"
+    t.string   "phone"
+    t.string   "email"
+    t.boolean  "susbcriber"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
