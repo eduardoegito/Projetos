@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :institutions
+
+  resources :matters
+
+  resources :alternatives
+
+  resources :questions
+
+  resources :courses
+
   root to: 'professors#index'
 
   resources :professors
